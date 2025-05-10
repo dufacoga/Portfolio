@@ -25,3 +25,17 @@
     display: inline-block;
     margin-top: 0.5rem;
 }
+
+.skill-group {
+    margin-top: 2rem;
+}
+
+.skill-group h3 {
+    color: #38bdf8;
+    margin-bottom: 0.5rem;
+}
+
+.skill-group ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
