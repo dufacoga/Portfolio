@@ -1,0 +1,13 @@
+﻿<button @onclick="ToggleTheme" class="theme-toggle">
+    Toggle Theme
+</button>
+
+@code {
+    private void ToggleTheme()
+    {
+        var current = JS.InvokeAsync<string>("toggleTheme");
+    }
+
+    [Inject]
+    private IJSRuntime JS { get; set; }
+}

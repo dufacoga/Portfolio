@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/app.css" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="manifest.webmanifest" rel="manifest" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,6 +28,17 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script>
+        window.toggleTheme = function () {
+            const current = document.documentElement.getAttribute("data-theme");
+            const newTheme = current === "light" ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", newTheme);
+            return newTheme;
+        };
+
+        // Set initial theme
+        document.documentElement.setAttribute("data-theme", "dark");
+    </script>
 </body>
 
 </html>

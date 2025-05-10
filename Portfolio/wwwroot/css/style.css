@@ -1,4 +1,26 @@
-﻿/* Home header image shadow */
+﻿:root {
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --accent-color: #38bdf8;
+    --card-bg: #1e293b;
+    --border-radius: 12px;
+}
+
+[data-theme='light'] {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --accent-color: #0ea5e9;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .header img {
     box-shadow: 0px 0px 15px rgba(56, 189, 248, 0.5);
 }
