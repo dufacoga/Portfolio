@@ -1,4 +1,5 @@
-﻿:root {
+﻿/* Root color variables for theme support */
+:root {
     --bg-color: #0f172a;
     --text-color: #ffffff;
     --accent-color: #38bdf8;
@@ -13,47 +14,104 @@
     --card-bg: #ffffff;
 }
 
+/* Global styles */
 body {
-    font-family: 'Inter', sans-serif;
     margin: 0;
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
-.header img {
-    box-shadow: 0px 0px 15px rgba(56, 189, 248, 0.5);
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .navbar a {
+        margin: 0 1rem;
+    }
+
+/* Home page */
+.home-header {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+    .home-header img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(56, 189, 248, 0.5);
+        margin-bottom: 1.5rem;
+    }
+
+/* Section container */
+.section {
+    padding: 2rem;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .project-card {
-    background-color: #1e293b;
-    border-radius: 12px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
     padding: 1rem;
-    margin-top: 1rem;
     box-shadow: 0px 0px 10px rgba(56, 189, 248, 0.1);
     transition: transform 0.2s ease;
 }
 
-.project-card:hover {
-    transform: scale(1.02);
+    .project-card:hover {
+        transform: scale(1.02);
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+        color: var(--accent-color);
+    }
+
+    .project-card a {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
 }
 
-.project-card h3 {
-    margin-top: 0;
-    color: #38bdf8;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-}
-
-.skill-group {
-    margin-top: 2rem;
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .skill-group h3 {
-    color: #38bdf8;
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 
@@ -62,11 +120,167 @@ body {
     padding-left: 1.5rem;
 }
 
-.contact-list {
+/* Contact */
+.contact-grid {
+    display: grid;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+    .theme-toggle:hover {
+        opacity: 0.9;
+    }
+/* Root color variables for theme support */
+:root {
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --accent-color: #38bdf8;
+    --card-bg: #1e293b;
+    --border-radius: 12px;
+}
+
+[data-theme='light'] {
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --accent-color: #0ea5e9;
+    --card-bg: #ffffff;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .navbar a {
+        margin: 0 1rem;
+    }
+
+/* Home page */
+.home-header {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+    .home-header img {
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(56, 189, 248, 0.5);
+        margin-bottom: 1.5rem;
+    }
+
+/* Section container */
+.section {
+    padding: 2rem;
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(56, 189, 248, 0.1);
+    transition: transform 0.2s ease;
+}
+
+    .project-card:hover {
+        transform: scale(1.02);
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+        color: var(--accent-color);
+    }
+
+    .project-card a {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
     margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skill-group h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.skill-group ul {
+    list-style: disc;
     padding-left: 1.5rem;
 }
 
-.contact-list li {
-    margin-bottom: 0.75rem;
+/* Contact */
+.contact-grid {
+    display: grid;
+    gap: 1rem;
+    padding-top: 1rem;
 }
+
+/* Theme toggle button */
+.theme-toggle {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+    .theme-toggle:hover {
+        opacity: 0.9;
+    }
