@@ -1,19 +1,19 @@
 ﻿@page "/"
 
 <div class="home">
-    <div class="content">
+    <div class="container">
         <div class="column1">
-            <div class="row1">
+            <div class="row">
                 <Card GroupClass="headercard">
                     <Header />
                 </Card>
             </div>
-            <div class="row2">
+            <div class="row">
                 <Card GroupClass="profilecard">
                     <Profile Title="John Doe" Subtitle="Sr. Software Engineer | Distributed Systems Specialist | Node.js, Microservices Architecture" ImageUrl="images/profile.jpg" />
                 </Card>
             </div>
-            <div class="row3">
+            <div class="row">
                 <Card GroupClass="contactcard">
                     <Contact>
                         <InfoContact Title="Based in:" Subtitle="USA" GroupClass="fas fa-map-marker-alt" />
@@ -25,19 +25,100 @@
                     </Contact>
                 </Card>
             </div>
-            <div class="row4"></div>
-            <div class="row5"></div>
-            <div class="row6"></div>
-            <div class="row7"></div>
+            <div class="row">
+                <Card GroupClass="skillscard">
+                    <GeneralInfoCard Title="Tech Stack" GroupClass="skills">
+                        <InfoSkill Text="PHP" />
+                        <InfoSkill Text="Laravel" />
+                        <InfoSkill Text="JavaScript" />
+                        <InfoSkill Text="React.js" />
+                        <InfoSkill Text="Node.js" />
+                        <InfoSkill Text="Nest.js" />
+                        <InfoSkill Text="MySql" />
+                        <InfoSkill Text="PostgreSQL" />
+                        <InfoSkill Text="Git" />
+                        <InfoSkill Text="Docker" />
+                        <InfoSkill Text="PHUnit" />
+                        <InfoSkill Text="CSS" />
+                        <InfoSkill Text="Antd" />
+                        <InfoSkill Text="Tailwind" />
+                    </GeneralInfoCard>
+                </Card>
+            </div>
+            <div class="row">
+                <Card GroupClass="experiencecard">
+                    <GeneralInfoCard Title="Experience" GroupClass="experience">
+                        <InfoGeneral Date="September 2021 - Present" Title="Position" Description="Company Name" />
+                        <InfoGeneral Date="July 2019 - August 2021" Title="Position" Description="Company Name" />
+                    </GeneralInfoCard>
+                </Card>
+            </div>
+            <div class="row">
+                <Card GroupClass="certificationcard">
+                    <GeneralInfoCard Title="Certification" GroupClass="certification">
+                        <InfoGeneral Date="March 2022" Title="Lorem ipsum" Description="Lorem ipsum dolor sit amet" />
+                    </GeneralInfoCard>
+                </Card>
+            </div>
+            <div class="row">
+                <Card GroupClass="educationcard">
+                    <GeneralInfoCard Title="Education" GroupClass="education">
+                        <InfoGeneral Date="2015 - 2019" Title="Degree" Description="Institution Name" />
+                        <InfoGeneral Date="2012 - 2014" Title="Degree" Description="Institution Name" />
+                    </GeneralInfoCard>
+                </Card>
+            </div>
         </div>
-        <div class="column1">
-            <div class="row1"></div>
-            <div class="row2"></div>
-            <div class="row3"></div>
-            <div class="row4"></div>
+        <div class="column2">
+            <div class="row">
+                <GroupCard Title="Github Projects" Link="See All" GroupClass="githubprojects">
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                    <Card GroupClass="githubproject">
+                    </Card>
+                </GroupCard>
+            </div>
+            <div class="row">
+                <GroupCard Title="Publications" Link="" GroupClass="publications">
+                    <Card GroupClass="publication">
+                    </Card>
+                    <Card GroupClass="publication">
+                    </Card>
+                </GroupCard>
+            </div>
+            <div class="row">
+                <GroupCard Title="My Projects" Link="" GroupClass="myprojects">
+                    <Card GroupClass="project">
+                    </Card>
+                    <Card GroupClass="project">
+                    </Card>
+                </GroupCard>
+            </div>
+            <div class="row">
+                <GroupCard Title="My Articles" Link="" GroupClass="myarticles">
+                    <Card GroupClass="article">
+                    </Card>
+                    <Card GroupClass="article">
+                    </Card>
+                </GroupCard>
+            </div>
         </div>
     </div>
     <div class="footer">
-
+        <Card GroupClass="footercard">
+            <span>Design inspired by <i class="fab fa-github"></i>Arifszn.</span>
+        </Card>
     </div>
 </div>

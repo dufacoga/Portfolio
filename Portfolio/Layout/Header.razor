@@ -1,8 +1,10 @@
 ﻿<div class="headertitle">
-	<h2>Theme</h2>
+	<h3>Theme</h3>
 	<span>@Subtitle</span>
 </div>
-<ThemeToggle OnThemeChanged="UpdateSubtitle" />
+<div class="headerdropdown">
+	<ThemeToggle OnThemeChanged="UpdateSubtitle" />
+</div>
 
 @code {
 	private string Subtitle = "Default";

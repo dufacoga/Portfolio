@@ -1,6 +1,5 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Inter);
 @import url("fa-xx.css");
-@import url("dropdown.css");
 @import url("profileimage.css");
 
 /* Root color variables for theme support */
@@ -8,15 +7,25 @@
     --bg-color: #e5e6e6;
     --text-color: #4c4c4c;
     --accent-color: #4c4c4c;
+    --accent-text-color: #e5e6e6;
     --card-group-bg: #eff0f0;
     --card-bg: #ffffff;
     --border-radius: 6px;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1rem;
+    --font-size-h4: 0.75rem;
+    --font-size-body: 0.75rem;
+    --font-weight-h1-bold: 800;
+    --font-weight-bold: 600;
+    --font-weight-regular: 400;
 }
 
 [data-theme='dark'] {
     --bg-color: #15191e;
     --text-color: #7e8391;
     --accent-color: #6b76f0;
+    --accent-text-color: #15191e;
     --card-group-bg: #181d23;
     --card-bg: #1d232a;
     --border-radius: 20px;
@@ -26,9 +35,14 @@
     --bg-color: #e5e6e6;
     --text-color: #616873;
     --accent-color: #5f35ff;
+    --accent-text-color: #e5e6e6;
     --card-group-bg: #eff0f0;
     --card-bg: #ffffff;
     --border-radius: 20px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /* Global styles */
@@ -47,14 +61,152 @@ body, app, main, home {
     width: 100%;
 }
 
-home {
-    margin: 2rem;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1-bold);
+}
+
+h2, h3 {
+    font-weight: var(--font-weight-bold);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-regular);
+}
+
+body, p, span, a, button, div {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+}
+
+.home {
     display: grid;
-    grid-gap: 2rem;
-    grid-template-rows: 2fr 3fr;
+    margin: 0;
+    padding: 2rem 2rem 1rem 2rem;
+    height: 100%;
+    width: 100%;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.row {
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+
+.column1 {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(7,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.headercard {
+    display: grid;
+    margin: 0;
+    padding: 1rem !important;
+    grid-gap: 0;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+}
+
+.headertitle {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: start;
+}
+
+.headertitle > h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.headertitle > span {
+    margin: 0;
+    padding: 0;
+}
+
+.headerdropdown {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    justify-content: end;
+}
+
+.column2 {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(4,auto);
+    align-content: center;
+}
+
+.groupcard {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
+
+.githubprojects {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.footer {
+    display: grid;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0;
+    white-space: nowrap;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.footercard {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
 }
 
 .theme-toggle-button {
@@ -66,6 +218,25 @@ home {
 
 .card {
     background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.infoskill {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+.groupcard {
+    background-color: var(--card-group-bg);
     border-radius: var(--border-radius);
     padding: 1.5rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
