@@ -1,0 +1,45 @@
+﻿.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.profile-image-wrapper {
+    padding: 3px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--text-color);
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+    .profile-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        display: block;
+    }
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-actions button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+    .profile-actions button:hover {
+        opacity: 0.9;
+    }

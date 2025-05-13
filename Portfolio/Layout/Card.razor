@@ -1,0 +1,8 @@
+﻿<div class="card @GroupClass">
+	@ChildContent
+</div>
+
+@code {
+	[Parameter] public RenderFragment ChildContent { get; set; }
+	[Parameter] public string GroupClass { get; set; }
+}

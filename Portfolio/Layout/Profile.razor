@@ -1,0 +1,16 @@
+﻿<div class="profile-image-wrapper">
+	<img src="@ImageUrl" alt="Profile photo" />
+</div>
+<div class="profile-info">
+	<h2>@Title</h2>
+	<div>@Subtitle</div>
+</div>
+<div class="profile-actions">
+	<button>Download Resume</button>
+</div>
+
+@code {
+	[Parameter] public string Title { get; set; }
+	[Parameter] public string Subtitle { get; set; }
+	[Parameter] public string ImageUrl { get; set; }
+}

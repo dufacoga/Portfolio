@@ -1,0 +1,14 @@
+﻿<div class="headertitle">
+	<h2>Theme</h2>
+	<span>@Subtitle</span>
+</div>
+<ThemeToggle OnThemeChanged="UpdateSubtitle" />
+
+@code {
+	private string Subtitle = "Default";
+
+	private void UpdateSubtitle(string theme)
+	{
+		Subtitle = char.ToUpper(theme[0]) + theme.Substring(1);
+	}
+}

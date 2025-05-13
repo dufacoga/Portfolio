@@ -1,14 +1,43 @@
 ﻿@page "/"
 
-<!-- Home page with profile, intro and social links -->
-<div class="home-header">
-    <img src="images/profile.jpg" alt="Profile picture" width="150" height="150" style="border-radius: 50%;" />
-    <h1>Hello, I'm John Doe</h1>
-    <p>Full-stack developer building elegant solutions for modern web applications.</p>
+<div class="home">
+    <div class="content">
+        <div class="column1">
+            <div class="row1">
+                <Card GroupClass="headercard">
+                    <Header />
+                </Card>
+            </div>
+            <div class="row2">
+                <Card GroupClass="profilecard">
+                    <Profile Title="John Doe" Subtitle="Sr. Software Engineer | Distributed Systems Specialist | Node.js, Microservices Architecture" ImageUrl="images/profile.jpg" />
+                </Card>
+            </div>
+            <div class="row3">
+                <Card GroupClass="contactcard">
+                    <Contact>
+                        <InfoContact Title="Based in:" Subtitle="USA" GroupClass="fas fa-map-marker-alt" />
+                        <InfoContact Title="GitHub:" Subtitle="johndoe" GroupClass="fab fa-github" />
+                        <InfoContact Title="LinkedIn:" Subtitle="johndoe" GroupClass="fab fa-linkedin" />
+                        <InfoContact Title="Website:" Subtitle="johndoe.com" GroupClass="fas fa-globe" />
+                        <InfoContact Title="Email:" Subtitle="johndoe@johndoe.com" GroupClass="fas fa-envelope" />
+                        <InfoContact Title="Cellphone:" Subtitle="+1 901 354 1894" GroupClass="fas fa-mobile-alt" />
+                    </Contact>
+                </Card>
+            </div>
+            <div class="row4"></div>
+            <div class="row5"></div>
+            <div class="row6"></div>
+            <div class="row7"></div>
+        </div>
+        <div class="column1">
+            <div class="row1"></div>
+            <div class="row2"></div>
+            <div class="row3"></div>
+            <div class="row4"></div>
+        </div>
+    </div>
+    <div class="footer">
 
-    <div style="margin-top: 1.5rem;">
-        <!-- Social media buttons (placeholders) -->
-        <a href="#" style="margin-right: 1rem;">LinkedIn</a>
-        <a href="#">GitHub</a>
     </div>
 </div>

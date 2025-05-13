@@ -1,13 +1,40 @@
-﻿<button @onclick="ToggleTheme" class="theme-toggle">
-    Toggle Theme
-</button>
+﻿@inject IJSRuntime JS
+
+<div class="dropdown" id="themeDropdown">
+    <button class="dropdown-button" onclick="toggleDropdown(event)">
+        <i class="fas fa-sliders-h"></i>
+        Change Theme
+        <i class="fas fa-chevron-down"></i>
+    </button>
+    <div class="dropdown-menu">
+        <div class="dropdown-item" onclick="setTheme('default')">Default</div>
+        <div class="dropdown-item" onclick="setTheme('dark')">Dark</div>
+        <div class="dropdown-item" onclick="setTheme('light')">Light</div>
+    </div>
+</div>
 
 @code {
-    private void ToggleTheme()
+    [Parameter] public EventCallback<string> OnThemeChanged { get; set; }
+
+    private DotNetObjectReference<ThemeToggle> _dotNetRef;
+
+    protected override void OnAfterRender(bool firstRender)
     {
-        var current = JS.InvokeAsync<string>("toggleTheme");
+        if (firstRender)
+        {
+            _dotNetRef = DotNetObjectReference.Create(this);
+            JS.InvokeVoidAsync("registerThemeChangeHandler", _dotNetRef);
+        }
     }
 
-    [Inject]
-    private IJSRuntime JS { get; set; }
+    [JSInvokable]
+    public async Task NotifyThemeChange(string theme)
+    {
+        await OnThemeChanged.InvokeAsync(theme);
+    }
+
+    public void Dispose()
+    {
+        _dotNetRef?.Dispose();
+    }
 }

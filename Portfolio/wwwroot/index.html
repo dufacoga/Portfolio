@@ -8,18 +8,13 @@
     <base href="/" />
     <link rel="stylesheet" href="css/app.css" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="js/fontawesome.js" data-auto-replace-svg="nest"></script>
+    <script src="js/themetoggle.js"></script>
     <link href="manifest.webmanifest" rel="manifest" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
+    <div id="app"></div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
@@ -28,17 +23,6 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
-    <script>
-        window.toggleTheme = function () {
-            const current = document.documentElement.getAttribute("data-theme");
-            const newTheme = current === "light" ? "dark" : "light";
-            document.documentElement.setAttribute("data-theme", newTheme);
-            return newTheme;
-        };
-
-        // Set initial theme
-        document.documentElement.setAttribute("data-theme", "dark");
-    </script>
 </body>
 
 </html>
