@@ -1,5 +1,9 @@
-﻿<div class="containerinfogeneral">
+﻿<!-- Main wrapper for the general information item -->
+<div class="containerinfogeneral">
+	<!-- Left column for fa-circle icon -->
 	<i class="fas fa-circle fa-xs"></i>
+
+	<!-- Right column for title and description -->
 	<div class="itemsinfogeneral">
 		<span class="">@Date</span>
 		<h3 class="">@Title</h3>
@@ -8,7 +12,12 @@
 </div>
 
 @code {
+	// Date or range to display (e.g. "2021 - Present")
 	[Parameter] public string Date { get; set; }
+
+	// Title or role (e.g. "Software Developer")
 	[Parameter] public string Title { get; set; }
+
+	// Description or context (e.g. "Company Name")
 	[Parameter] public string Description { get; set; }
 }

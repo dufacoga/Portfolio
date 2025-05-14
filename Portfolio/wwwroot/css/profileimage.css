@@ -1,4 +1,5 @@
-﻿.profile-container {
+﻿/* Container for the entire profile section, vertically centered */
+.profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,6 +8,7 @@
     padding: 1.5rem;
 }
 
+/* Wrapper for the profile image with circular border and shadow */
 .profile-image-wrapper {
     padding: 3px;
     border-radius: 50%;
@@ -16,6 +18,7 @@
     overflow: hidden;
 }
 
+    /* Ensures the image fills the wrapper and remains circular */
     .profile-image-wrapper img {
         width: 100%;
         height: 100%;
@@ -24,11 +27,13 @@
         display: block;
     }
 
+/* Styles the name/title in the profile info section */
 .profile-info h2 {
     margin: 0;
     font-size: 1.5rem;
 }
 
+/* Button styling for actions like downloading resume */
 .profile-actions button {
     background-color: transparent;
     color: var(--text-color);
@@ -40,6 +45,7 @@
     transition: background-color 0.2s ease;
 }
 
+    /* Hover effect for the action button */
     .profile-actions button:hover {
         opacity: 0.9;
     }

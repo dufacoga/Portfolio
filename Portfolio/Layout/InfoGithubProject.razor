@@ -1,45 +1,63 @@
 ﻿<div class="infogithubprojectcard">
-    <div class="infogithubprojecttitle">
-        <i class="fas fa-link"></i>
-        <h3>@Name</h3>
-    </div>
-    <div class="infogithubprojectdescription">@Description</div>
-    <div class="infogithubprojectdata">
-        <div class="infogithubprojectitems">
-            <div class="infogithubprojectstars">
-                <i class="fas fa-star"></i>
-                <span>@Stars</span>
-            </div>
-            <div class="infogithubprojectforks">
-                <i class="fas fa-code-branch"></i>
-                <span>@Forks</span>
-            </div>
-        </div>
-        <div class="infogithubprojectlenguaje">
-            <i style="color:@GetLanguageColor(Language)">●</i>
-            <span>@Language</span>
-        </div>
-    </div>
+	<!-- Project header with icon and name -->
+	<div class="infogithubprojecttitle">
+		<i class="fas fa-link"></i>
+		<h3>@Name</h3>
+	</div>
+
+	<!-- Short text description of the GitHub project -->
+	<div class="infogithubprojectdescription">@Description</div>
+
+	<!-- Container for stars, forks, and language -->
+	<div class="infogithubprojectdata">
+		<div class="infogithubprojectitems">
+
+			<!-- Star count block -->
+			<div class="infogithubprojectstars">
+				<i class="fas fa-star"></i>
+				<span>@Stars</span>
+			</div>
+
+			<!-- Fork count block -->
+			<div class="infogithubprojectforks">
+				<i class="fas fa-code-branch"></i>
+				<span>@Forks</span>
+			</div>
+
+		</div>
+
+		<!-- Programming language with colored dot -->
+		<div class="infogithubprojectlenguaje">
+			<i style="color:@LanguageColor">●</i>
+			<span>@Language</span>
+		</div>
+	</div>
 </div>
 
 @code {
-    [Parameter] public string Name { get; set; }
-    [Parameter] public string Description { get; set; }
-    [Parameter] public int Stars { get; set; }
-    [Parameter] public int Forks { get; set; }
-    [Parameter] public string Language { get; set; }
+	// Repository name
+	[Parameter] public string Name { get; set; }
 
-    private string GetLanguageColor(string language)
-    {
-        return language switch
-        {
-            "JavaScript" => "#f1e05a",
-            "TypeScript" => "#2b7489",
-            "PHP" => "#4F5D95",
-            "HTML" => "#e34c26",
-            "C#" => "#178600",
-            "CSS" => "#563d7c",
-            _ => "#cccccc"
-        };
-    }
+	// Description of the project
+	[Parameter] public string Description { get; set; }
+
+	// GitHub star count
+	[Parameter] public int Stars { get; set; }
+
+	// GitHub fork count
+	[Parameter] public int Forks { get; set; }
+
+	// Programming language (used to determine color)
+	[Parameter] public string Language { get; set; }
+
+	// Logic to assign a color code based on programming language
+	private string LanguageColor => Language switch
+	{
+		"HTML" => "#e34c26",
+		"JavaScript" => "#f1e05a",
+		"TypeScript" => "#2b7489",
+		"C#" => "#178600",
+		"CSS" => "#563d7c",
+		_ => "#cccccc"
+	};
 }

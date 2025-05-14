@@ -260,22 +260,12 @@ body, p, span, a, button, div {
     transition: background-color 0.3s ease;
 }
 
-.experience {
-    display: grid;
-    margin: 0;
-    padding: 0;
-    grid-gap: 0.75rem;
-    grid-template-rows: repeat(2,auto);
-    align-content: center;
-    justify-content: start;
-}
-
 .containerinfogeneral {
     display: grid;
     margin: 0;
     padding: 0;
     grid-gap: 0.25rem;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1fr 14fr;
     align-content: center;
     justify-content: center;
 }
@@ -285,6 +275,54 @@ body, p, span, a, button, div {
         align-content: center;
         justify-content: start;
         color: var(--bg-color);
+    }
+
+.experience {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.75rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: stretch;
+}
+
+    .experience > h2 {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+.certification {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.75rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: stretch;
+}
+
+    .certification > h2 {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+.education {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.75rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: stretch;
+}
+
+    .education > h2 {
+        width: 100%;
+        margin: 0;
+        text-align: left;
     }
 
 .column2 {
@@ -301,7 +339,7 @@ body, p, span, a, button, div {
     margin: 0;
     grid-gap: 1rem;
     align-content: center;
-    justify-content: center;
+    justify-content: stretch;
 }
 
 .grouptitle {
@@ -475,22 +513,24 @@ body, p, span, a, button, div {
     }
 
 .myarticles {
+    width: 100%;
     display: grid;
     margin: 0;
     grid-gap: 1rem;
     grid-template-rows: repeat(2,auto);
     align-content: center;
-    justify-content: center;
+    justify-content: stretch;
 }
 
 .article {
+    width: 100%;
     display: grid;
     margin: 0;
     padding: 2rem;
-    grid-gap: 0.5rem;
-    grid-template-columns: repeat(2,auto);
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 10fr;
     align-content: center;
-    justify-content: center;
+    justify-content: stretch;
     text-align: justify;
 }
 
@@ -504,13 +544,14 @@ body, p, span, a, button, div {
     }
 
 .infomyarticlecontainer {
+    width: 100%;
     display: grid;
     margin: 0;
     padding: 0;
     grid-gap: 1rem;
     grid-template-rows: repeat(3,auto);
     align-content: center;
-    justify-content: center;
+    justify-content: stretch;
 }
 
 .infomyarticlecontent {
@@ -523,6 +564,7 @@ body, p, span, a, button, div {
 }
 
     .infomyarticlecontent > h4 {
+        width: 100%;
         font-weight: var(--font-weight-bold);
         text-align: start;
         white-space: nowrap;

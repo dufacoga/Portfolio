@@ -1,12 +1,17 @@
-﻿<div class="groupgeneralinfo">
-	<h2>@Title</h2>
-	<div class="@GroupClass">
-		@ChildContent
-	</div>
+﻿<div class="@GroupClass">
+    <h2>@Title</h2>
+    <div>
+        @ChildContent
+    </div>
 </div>
 
 @code {
-	[Parameter] public string Title { get; set; }
-	[Parameter] public RenderFragment ChildContent { get; set; }
-	[Parameter] public string GroupClass { get; set; }
+    // The title of the section (e.g., Experience, Education, Skills)
+    [Parameter] public string Title { get; set; }
+
+    // CSS class name for styling the entire group
+    [Parameter] public string GroupClass { get; set; }
+
+    // Content to be rendered inside (e.g., InfoGeneral, InfoSkill, etc.)
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

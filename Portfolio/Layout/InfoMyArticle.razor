@@ -1,19 +1,37 @@
-﻿<img src="@ImageUrl" alt="Article Image" />
+﻿<!-- Displays the article's main image -->
+<img src="@ImageUrl" alt="Article Image" />
+
+<!-- Wrapper for article text content and hashtags -->
 <div class="infomyarticlecontainer">
+
+	<!-- Title and time information -->
 	<div class="infomyarticlecontent">
 		<h4>@Title</h4>
 		<span>@Time</span>
 	</div>
+
+	<!-- Short description of the article -->
 	<span>@Description</span>
+
+	<!-- Hashtag tags shown at the bottom -->
 	<div class="infomyarticlehashtags">
 		@ChildContent
 	</div>
 </div>
 
 @code {
+	// URL for the article's image
 	[Parameter] public string ImageUrl { get; set; }
+
+	// Title of the article
 	[Parameter] public string Title { get; set; }
+
+	// Timestamp or publication date
 	[Parameter] public string Time { get; set; }
+
+	// Short description of the article
 	[Parameter] public string Description { get; set; }
+
+	// Hashtag list or any additional child content
 	[Parameter] public RenderFragment ChildContent { get; set; }
 }

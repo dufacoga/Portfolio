@@ -1,11 +1,21 @@
 ﻿<div class="infocontacttitle">
+	<!-- Displays a FontAwesome icon based on the GroupClass passed -->
 	<i class="@GroupClass"></i>
+
+	<!-- The label/title for this contact field (e.g., "GitHub") -->
 	<h4>@Title</h4>
 </div>
+
+<!-- The actual contact value (e.g., username, email) -->
 <span>@Subtitle</span>
 
 @code {
+	// Title or label of the contact item
 	[Parameter] public string Title { get; set; }
+
+	// Actual contact information to display
 	[Parameter] public string Subtitle { get; set; }
+
+	// FontAwesome icon class (e.g., "fab fa-github")
 	[Parameter] public string GroupClass { get; set; }
 }

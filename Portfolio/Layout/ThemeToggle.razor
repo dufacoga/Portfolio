@@ -1,40 +1,48 @@
 ﻿@inject IJSRuntime JS
 
+<!-- Theme selection dropdown button -->
 <div class="dropdown" id="themeDropdown">
-    <button class="dropdown-button" onclick="toggleDropdown(event)">
-        <i class="fas fa-sliders-h"></i>
-        Change Theme
-        <i class="fas fa-chevron-down"></i>
-    </button>
-    <div class="dropdown-menu">
-        <div class="dropdown-item" onclick="setTheme('default')">Default</div>
-        <div class="dropdown-item" onclick="setTheme('dark')">Dark</div>
-        <div class="dropdown-item" onclick="setTheme('light')">Light</div>
-    </div>
+	<button class="dropdown-button" onclick="toggleDropdown(event)">
+		<i class="fas fa-sliders-h"></i>
+		Change Theme
+		<i class="fas fa-chevron-down"></i>
+	</button>
+
+	<!-- Dropdown menu with three selectable themes -->
+	<div class="dropdown-menu">
+		<div class="dropdown-item" onclick="setTheme('default')">Default</div>
+		<div class="dropdown-item" onclick="setTheme('dark')">Dark</div>
+		<div class="dropdown-item" onclick="setTheme('light')">Light</div>
+	</div>
 </div>
 
 @code {
-    [Parameter] public EventCallback<string> OnThemeChanged { get; set; }
+	// Callback to notify parent components when theme changes
+	[Parameter] public EventCallback<string> OnThemeChanged { get; set; }
 
-    private DotNetObjectReference<ThemeToggle> _dotNetRef;
+	// DotNet reference to allow JS to call Blazor method
+	private DotNetObjectReference<ThemeToggle> _dotNetRef;
 
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-        {
-            _dotNetRef = DotNetObjectReference.Create(this);
-            JS.InvokeVoidAsync("registerThemeChangeHandler", _dotNetRef);
-        }
-    }
+	// Registers the theme change callback on first render
+	protected override void OnAfterRender(bool firstRender)
+	{
+		if (firstRender)
+		{
+			_dotNetRef = DotNetObjectReference.Create(this);
+			JS.InvokeVoidAsync("registerThemeChangeHandler", _dotNetRef);
+		}
+	}
 
-    [JSInvokable]
-    public async Task NotifyThemeChange(string theme)
-    {
-        await OnThemeChanged.InvokeAsync(theme);
-    }
+	// Method invoked by JavaScript to pass back the selected theme
+	[JSInvokable]
+	public async Task NotifyThemeChange(string theme)
+	{
+		await OnThemeChanged.InvokeAsync(theme);
+	}
 
-    public void Dispose()
-    {
-        _dotNetRef?.Dispose();
-    }
+	// Dispose DotNet reference to prevent memory leaks
+	public void Dispose()
+	{
+		_dotNetRef?.Dispose();
+	}
 }

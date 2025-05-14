@@ -1,7 +1,10 @@
 ﻿<Router AppAssembly="@typeof(App).Assembly">
+    <!-- If a route is found, render the corresponding view using the default layout -->
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
     </Found>
+
+    <!-- If no route matches, display a fallback message within the main layout -->
     <NotFound>
         <LayoutView Layout="@typeof(MainLayout)">
             <p>Sorry, there's nothing at this address.</p>

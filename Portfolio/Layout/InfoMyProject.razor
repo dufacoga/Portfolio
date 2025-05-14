@@ -1,9 +1,19 @@
-﻿<h3>@Title</h3>
+﻿<!-- Title of the project -->
+<h3>@Title</h3>
+
+<!-- Image that visually represents the project -->
 <img src="@ImageUrl" alt="Project Image" />
+
+<!-- Short description about the project -->
 <span>@Description</span>
 
 @code {
+	// Project title or name
 	[Parameter] public string Title { get; set; }
+
+	// Image shown above or beside the project description
 	[Parameter] public string ImageUrl { get; set; }
+
+	// Summary of what the project does or represents
 	[Parameter] public string Description { get; set; }
 }

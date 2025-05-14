@@ -1,16 +1,26 @@
-﻿<div class="profile-item profile-image-wrapper">
+﻿<!-- Profile photo section -->
+<div class="profile-item profile-image-wrapper">
 	<img src="@ImageUrl" alt="Profile photo" />
 </div>
+
+<!-- Profile title and subtitle -->
 <div class="profile-item profile-info">
 	<h1>@Title</h1>
 	<div>@Subtitle</div>
 </div>
+
+<!-- Resume download button -->
 <div class="profile-item profile-actions">
 	<button>Download Resume</button>
 </div>
 
 @code {
+	// Title text, usually the user's full name
 	[Parameter] public string Title { get; set; }
+
+	// Subtitle text, typically the user's role or short bio
 	[Parameter] public string Subtitle { get; set; }
+
+	// Image URL for the profile photo
 	[Parameter] public string ImageUrl { get; set; }
 }

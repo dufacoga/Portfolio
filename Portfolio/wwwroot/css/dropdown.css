@@ -1,8 +1,10 @@
-﻿.dropdown {
+﻿/* Wrapper for the dropdown component, enabling absolute positioning */
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Button that toggles the dropdown menu */
 .dropdown-button {
     background-color: var(--card-bg);
     color: var(--text-color);
@@ -16,10 +18,12 @@
     transition: background-color 0.2s ease;
 }
 
+    /* Hover effect for the dropdown button */
     .dropdown-button:hover {
         background-color: var(--card-group-bg);
     }
 
+/* Hidden menu that appears when dropdown is activated */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -32,10 +36,12 @@
     z-index: 999;
 }
 
+/* When the dropdown is open, display the menu */
 .dropdown.open .dropdown-menu {
     display: block;
 }
 
+/* Individual item inside the dropdown menu */
 .dropdown-item {
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -45,6 +51,7 @@
     border-radius: var(--border-radius);
 }
 
+    /* Hover effect for dropdown items */
     .dropdown-item:hover {
         background-color: var(--bg-color);
         border-radius: var(--border-radius);

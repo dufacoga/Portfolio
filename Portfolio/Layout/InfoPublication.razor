@@ -1,11 +1,25 @@
-﻿<h3>@Title</h3>
+﻿<!-- Main heading of the publication -->
+<h3>@Title</h3>
+
+<!-- Source or publishing platform -->
 <span>@Origin</span>
+
+<!-- Name of the author -->
 <span>@Author</span>
+
+<!-- Description of the publication content -->
 <p>@Description</p>
 
 @code {
+	// Publication title
 	[Parameter] public string Title { get; set; }
+
+	// Origin or platform (e.g. Medium, Amazon)
 	[Parameter] public string Origin { get; set; }
+
+	// Author name
 	[Parameter] public string Author { get; set; }
+
+	// Short description of the content
 	[Parameter] public string Description { get; set; }
 }

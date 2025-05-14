@@ -1,14 +1,19 @@
 ﻿<div class="headertitle">
 	<h3>Theme</h3>
+	<!-- Displays the current theme (Default, Light, or Dark) -->
 	<span>@Subtitle</span>
 </div>
+
+<!-- Contains the theme toggle dropdown component -->
 <div class="headerdropdown">
 	<ThemeToggle OnThemeChanged="UpdateSubtitle" />
 </div>
 
 @code {
+	// Local state for the subtitle showing the active theme
 	private string Subtitle = "Default";
 
+	// Callback to update the subtitle when the user selects a new theme
 	private void UpdateSubtitle(string theme)
 	{
 		Subtitle = char.ToUpper(theme[0]) + theme.Substring(1);

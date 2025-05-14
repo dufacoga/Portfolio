@@ -1,8 +1,11 @@
 ﻿<div class="card @GroupClass">
-	@ChildContent
+    @ChildContent
 </div>
 
 @code {
-	[Parameter] public RenderFragment ChildContent { get; set; }
-	[Parameter] public string GroupClass { get; set; }
+    // Allows passing custom CSS class names to style the card
+    [Parameter] public string GroupClass { get; set; }
+
+    // Enables any nested content (text, components, etc.) to be rendered inside the card
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

@@ -1,17 +1,29 @@
 ﻿<div class="groupcard">
+	<!-- Section header with title and optional external link -->
 	<div class="grouptitle">
 		<h2>@Title</h2>
 		<a href="@LinkHref" target="_blank">@Link</a>
 	</div>
+
+	<!-- Container for grouped card content, styled via GroupClass -->
 	<div class="group @GroupClass">
 		@ChildContent
 	</div>
 </div>
 
 @code {
+	// Title displayed in the header of the group section
 	[Parameter] public string Title { get; set; }
+
+	// Optional link text (e.g., "See All")
 	[Parameter] public string Link { get; set; }
+
+	// The URL that the link should navigate to
 	[Parameter] public string LinkHref { get; set; }
+
+	// Child content to be rendered inside the group (e.g., <Card> elements)
 	[Parameter] public RenderFragment ChildContent { get; set; }
+
+	// Optional CSS class applied to the inner group container
 	[Parameter] public string GroupClass { get; set; }
 }
