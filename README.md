@@ -58,18 +58,56 @@ This project serves as a modern personal landing page to showcase GitHub project
 ## 📂 Project Structure
 
 ```
-📁 Pages/
-    └── Home.razor
-📁 Components/
-    ├── Card.razor
-    ├── GroupCard.razor
-    ├── InfoGithubProject.razor
-    ├── InfoGeneral.razor
-    ├── InfoContact.razor
-    ├── ThemeToggle.razor
-📁 wwwroot/
-    └── images/
-    └── css/
+📁 Portfolio/
+├── App.razor
+├── _Imports.razor
+├── Program.cs
+├── Portfolio.csproj
+├── Properties/
+│   └── launchSettings.json
+│
+├── Pages/
+│   └── Home.razor
+│
+├── Model/
+│   └── GitHubProject.cs
+│
+├── Layout/
+│   ├── MainLayout.razor
+│   ├── Card.razor
+│   ├── GroupCard.razor
+│   ├── Contact.razor
+│   ├── Header.razor
+│   ├── Profile.razor
+│   ├── ThemeToggle.razor
+│   ├── GeneralInfoCard.razor
+│   ├── InfoContact.razor
+│   ├── InfoSkill.razor
+│   ├── InfoGeneral.razor
+│   ├── InfoGithubProject.razor
+│   ├── InfoHashtag.razor
+│   ├── InfoPublication.razor
+│   ├── InfoMyProject.razor
+│   └── InfoMyArticle.razor
+│
+├── wwwroot/
+│   ├── index.html
+│   ├── manifest.webmanifest
+│   ├── service-worker.js
+│   ├── service-worker.published.js
+│   ├── css/
+│   │   ├── app.css
+│   │   ├── dropdown.css
+│   │   ├── fa-xx.css
+│   │   ├── profileimage.css
+│   │   └── style.css
+│   ├── js/
+│   │   ├── fontawesome.js
+│   │   └── themetoggle.js
+│   └── images/
+│       ├── profile.jpg
+│       ├── illustration-gallery-icon.png
+│       └── amazonawsarticles.png
 ```
 
 ---
