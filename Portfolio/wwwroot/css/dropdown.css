@@ -42,8 +42,10 @@
     color: var(--text-color);
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
+    border-radius: var(--border-radius);
 }
 
     .dropdown-item:hover {
         background-color: var(--bg-color);
+        border-radius: var(--border-radius);
     }

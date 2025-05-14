@@ -1,0 +1,19 @@
+﻿<img src="@ImageUrl" alt="Article Image" />
+<div class="infomyarticlecontainer">
+	<div class="infomyarticlecontent">
+		<h4>@Title</h4>
+		<span>@Time</span>
+	</div>
+	<span>@Description</span>
+	<div class="infomyarticlehashtags">
+		@ChildContent
+	</div>
+</div>
+
+@code {
+	[Parameter] public string ImageUrl { get; set; }
+	[Parameter] public string Title { get; set; }
+	[Parameter] public string Time { get; set; }
+	[Parameter] public string Description { get; set; }
+	[Parameter] public RenderFragment ChildContent { get; set; }
+}

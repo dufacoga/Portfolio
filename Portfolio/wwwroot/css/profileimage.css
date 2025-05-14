@@ -10,9 +10,9 @@
 .profile-image-wrapper {
     padding: 3px;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px var(--text-color);
-    width: 150px;
-    height: 150px;
+    box-shadow: 0 0 0 3px var(--accent-color);
+    width: 7rem;
+    height: 7rem;
     overflow: hidden;
 }
 

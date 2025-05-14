@@ -1,7 +1,7 @@
 ﻿<div class="groupcard">
 	<div class="grouptitle">
 		<h2>@Title</h2>
-		<a>@Link</a>
+		<a href="@LinkHref" target="_blank">@Link</a>
 	</div>
 	<div class="group @GroupClass">
 		@ChildContent
@@ -11,6 +11,7 @@
 @code {
 	[Parameter] public string Title { get; set; }
 	[Parameter] public string Link { get; set; }
+	[Parameter] public string LinkHref { get; set; }
 	[Parameter] public RenderFragment ChildContent { get; set; }
 	[Parameter] public string GroupClass { get; set; }
 }

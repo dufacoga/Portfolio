@@ -1,6 +1,4 @@
-﻿@import url(https://fonts.googleapis.com/css?family=Inter);
-@import url("fa-xx.css");
-@import url("profileimage.css");
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* Root color variables for theme support */
 :root {
@@ -13,7 +11,7 @@
     --border-radius: 6px;
     --font-size-h1: 1.25rem;
     --font-size-h2: 1.25rem;
-    --font-size-h3: 1rem;
+    --font-size-h3: 0.9rem;
     --font-size-h4: 0.75rem;
     --font-size-body: 0.75rem;
     --font-weight-h1-bold: 800;
@@ -43,12 +41,12 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* Global styles */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.4s ease, color 0.4s ease;
@@ -61,13 +59,18 @@ body, app, main, home {
     width: 100%;
 }
 
+h2, h3 {
+    font-weight: var(--font-weight-bold);
+}
+
+h1, h2, h3, h4, span {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-h1-bold);
-}
-
-h2, h3 {
-    font-weight: var(--font-weight-bold);
 }
 
 h2 {
@@ -105,8 +108,8 @@ body, p, span, a, button, div {
     margin: 0;
     padding: 0;
     grid-gap: 1rem;
-    grid-template-columns: 1fr 4fr;
-    align-content: center;
+    grid-template-columns: 1fr 3fr;
+    align-content: start;
     justify-content: center;
 }
 
@@ -122,8 +125,16 @@ body, p, span, a, button, div {
     padding: 0;
     grid-gap: 1rem;
     grid-template-rows: repeat(7,auto);
-    align-content: center;
+    align-content: start;
     justify-content: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
 }
 
 .headercard {
@@ -145,14 +156,11 @@ body, p, span, a, button, div {
     justify-content: start;
 }
 
-.headertitle > h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.headertitle > span {
-    margin: 0;
-    padding: 0;
+.theme-toggle-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
 }
 
 .headerdropdown {
@@ -163,23 +171,161 @@ body, p, span, a, button, div {
     justify-content: end;
 }
 
+.profilecard {
+    display: grid;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(3,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.profile-item {
+    display: grid;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-info {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.5rem;
+    grid-template-rows: repeat(2,auto);
+}
+
+.contactcard {
+    display: grid;
+    margin: 0;
+    grid-gap: 0.5rem;
+    grid-template-rows: repeat(6,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.contact {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr 5fr;
+    align-content: center;
+    justify-content: end;
+}
+
+    .contact > span {
+        text-align: end;
+    }
+
+.infocontacttitle {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: start;
+}
+
+    .infocontacttitle > h4 {
+        font-weight: var(--font-weight-bold);
+        text-align: start;
+        white-space: nowrap;
+    }
+
+.groupgeneralinfo {
+    display: grid;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.infoskill {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    margin: 0.2rem 0;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+.experience {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.75rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: start;
+}
+
+.containerinfogeneral {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr 9fr;
+    align-content: center;
+    justify-content: center;
+}
+
+    .containerinfogeneral > i {
+        display: grid;
+        align-content: center;
+        justify-content: start;
+        color: var(--bg-color);
+    }
+
 .column2 {
     display: grid;
     margin: 0;
     padding: 0;
     grid-gap: 1rem;
     grid-template-rows: repeat(4,auto);
-    align-content: center;
+    align-content: start;
 }
 
 .groupcard {
     display: grid;
     margin: 0;
-    padding: 0;
     grid-gap: 1rem;
     align-content: center;
     justify-content: center;
 }
+
+.grouptitle {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 2fr 7fr;
+    align-content: start;
+    justify-content: center;
+}
+
+    .grouptitle > a {
+        text-align: end;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+        .grouptitle > a:hover,
+        .grouptitle > a:visited,
+        .grouptitle > a:active {
+            text-decoration: none;
+            color: var(--text-color);
+        }
 
 .githubprojects {
     display: grid;
@@ -190,6 +336,212 @@ body, p, span, a, button, div {
     grid-template-rows: repeat(4,auto);
     align-content: center;
     justify-content: center;
+}
+
+.githubproject.clone {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.infogithubprojectcard {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(3,auto);
+    align-content: start;
+    justify-content: center;
+}
+
+.infogithubprojecttitle {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: start;
+}
+
+.infogithubprojectdata {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: 1fr 9fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.infogithubprojectitems {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.infogithubprojectstars {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.infogithubprojectforks {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.infogithubprojectlenguaje {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: end;
+}
+
+    .infogithubprojectlenguaje > i {
+        font-size: var(--font-size-h2);
+    }
+
+    .infogithubprojectlenguaje > span {
+        align-content: center;
+    }
+
+.publications {
+    display: grid;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.publication {
+    display: grid;
+    margin: 0;
+    padding: 3rem;
+    grid-gap: 0.5rem;
+    grid-template-rows: repeat(4,auto);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.publication > p {
+    text-align: justify;
+}
+
+.myprojects {
+    display: grid;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.project {
+    display: grid;
+    margin: 0;
+    padding: 3rem;
+    grid-gap: 0.5rem;
+    grid-template-rows: repeat(4,auto);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .project > img {
+        width: 7rem;
+        height: 7rem;
+        display: block;
+        margin: auto auto;
+        object-fit: cover;
+        border-radius: 2.5rem;
+    }
+
+.myarticles {
+    display: grid;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.article {
+    display: grid;
+    margin: 0;
+    padding: 2rem;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2,auto);
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+    .article > img {
+        width: 7rem;
+        height: 7rem;
+        display: block;
+        margin: auto auto;
+        object-fit: cover;
+        border-radius: 2.5rem;
+    }
+
+.infomyarticlecontainer {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(3,auto);
+    align-content: center;
+    justify-content: center;
+}
+
+.infomyarticlecontent {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 0.25rem;
+    grid-template-rows: repeat(2,auto);
+    align-content: center;
+}
+
+    .infomyarticlecontent > h4 {
+        font-weight: var(--font-weight-bold);
+        text-align: start;
+        white-space: nowrap;
+    }
+
+.infomyarticlehashtags {
+    text-align: start;
+}
+
+.infohashtag {
+    display: inline-block;
+    background-color: var(--bg-color);
+    color: var(--font-size-body);
+    margin: 0.2rem 0;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    width: auto;
+    transition: background-color 0.3s ease;
 }
 
 .footer {
@@ -205,34 +557,7 @@ body, p, span, a, button, div {
 .footercard {
     display: inline-block;
     margin: 0;
-    padding: 0;
     white-space: nowrap;
-}
-
-.theme-toggle-button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-.card {
-    background-color: var(--card-bg);
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
-}
-
-.infoskill {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
-    padding: 0.4rem 0.8rem;
-    border-radius: 999px;
-    white-space: nowrap;
-    width: auto;
-    transition: background-color 0.3s ease;
 }
 
 .groupcard {
