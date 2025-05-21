@@ -7,14 +7,15 @@ This project serves as a modern personal landing page to showcase GitHub project
 
 ## 🚀 Live Demo
 
-👉 [Visit Demo](https://dufacoga.github.io) &nbsp; _(Replace this with your actual GitHub Pages URL)_
+👉 [Visit Demo]() &nbsp;
 
 ---
 
 ## 🖼️ Preview
 
+![Portfolio Desktop Preview](https://github.com/user-attachments/assets/b43dda5a-7a81-4a64-b7a7-44a482f858ff)
+
 ### 💡 Overview
-> 🧩 Insert a **static screenshot** here showing the **full desktop layout** of the portfolio (including left and right columns, header, GitHub Projects, etc.)
 
 📌 **What to show in this image:**
 - Profile photo
@@ -22,23 +23,20 @@ This project serves as a modern personal landing page to showcase GitHub project
 - Contact info
 - Tech stack
 - GitHub Projects on the right
-
-```markdown
-![Portfolio Desktop Preview](https://your-link-to-screenshot.png)
-```
+- Experience
+- Publications
 
 ---
 
 ### 📱 Responsive & Theme Switching
 
-> 🎞️ Insert a **GIF or video** demo showing:
-> 1. The responsive behavior (mobile ↔️ desktop)
-> 2. Switching between themes (dark, light, default)
-> 3. Interaction with dropdowns or project cards
+**The responsive behavior (mobile ↔️ desktop)**
 
-```markdown
-![Responsive and Theme Demo](https://your-link-to-demo.gif)
-```
+https://github.com/user-attachments/assets/05675604-e5ba-480e-982b-48f493536efa
+
+**Switching between themes (dark, light, default)**
+
+https://github.com/user-attachments/assets/7ac36602-171f-4d8f-b98c-b5ca5c68c182
 
 ---
 
@@ -51,7 +49,6 @@ This project serves as a modern personal landing page to showcase GitHub project
 - 🔄 **Reusable UI components** like `<Card>`, `<InfoContact>`, `<InfoSkill>`
 - 📱 **Fully responsive design** for desktop and mobile
 - 🧠 **Modular and scalable** – easily extend sections like Projects, Articles, Skills
-- 🌐 **Hosted on GitHub Pages**
 
 ---
 
@@ -97,9 +94,6 @@ This project serves as a modern personal landing page to showcase GitHub project
 │   ├── service-worker.published.js
 │   ├── css/
 │   │   ├── app.css
-│   │   ├── dropdown.css
-│   │   ├── fa-xx.css
-│   │   ├── profileimage.css
 │   │   └── style.css
 │   ├── js/
 │   │   ├── fontawesome.js
@@ -139,8 +133,10 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
+## 👤 Design inspired by 🌐 [Ariful Alam](https://github.com/arifszn)
+
 ## 👤 Author
 
 **Douglas Cortes**  
-💼 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+💼 [LinkedIn](https://www.linkedin.com/in/dufacoga)  
 🌐 [dufacoga.github.io](https://dufacoga.github.io)
