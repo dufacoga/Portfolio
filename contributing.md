@@ -57,3 +57,5 @@ Blazor encourages component-based thinking, so feel free to split logic into new
 ## 🤝 Code of Conduct
 
 This project follows a basic principle: be respectful and constructive. Whether it’s an issue comment or a PR discussion, keep it friendly and helpful.
+
+For more details, please refer to our [Code of Conduct](CODE_OF_CONDUCT.md).
