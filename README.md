@@ -1,13 +1,12 @@
 # 🌐 Blazor Developer Portfolio
 
 <p align="center">
-  <a href="https://github.com/dufacoga/portfolio/actions/workflows/deploy.yml"><img src="https://github.com/dufacoga/portfolio/actions/workflows/deploy.yml/badge.svg" /></a>
-  <a href="https://github.com/dufacoga/portfolio/issues"><img src="https://img.shields.io/github/issues/arifszn/gitprofile"/></a>
-  <a href="https://github.com/dufacoga/portfolio/stargazers"><img src="https://img.shields.io/github/stars/arifszn/gitprofile"/></a>
-  <a href="https://github.com/dufacoga/portfolio/network/members"><img src="https://img.shields.io/github/forks/arifszn/gitprofile"/></a>
+  <a href="https://github.com/dufacoga/portfolio/issues"><img src="https://img.shields.io/github/issues/dufacoga/portfolio"/></a>
+  <a href="https://github.com/dufacoga/portfolio/stargazers"><img src="https://img.shields.io/github/stars/dufacoga/portfolio"/></a>
+  <a href="https://github.com/dufacoga/portfolio/network/members"><img src="https://img.shields.io/github/forks/dufacoga/portfolio"/></a>
   <a href="https://github.com/dufacoga/portfolio/commits/master"><img src="https://img.shields.io/github/last-commit/dufacoga/portfolio"/></a>
-  <a href="https://github.com/dufacoga/portfolio/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
-  <a href="https://github.com/dufacoga/portfolio/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dufacoga/portfolio"/></a>
+  <a href="https://github.com/dufacoga/portfolio/blob/master/contributing.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
+  <a href="https://github.com/dufacoga/portfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dufacoga/portfolio"/></a>
 </p>
 
 
