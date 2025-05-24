@@ -1,4 +1,4 @@
-# 🌐 Blazor Developer Portfolio
+# 🌐 Personal Portfolio Powered by Blazor WebAssembly
 
 <p align="center">
   <a href="https://github.com/dufacoga/portfolio/issues"><img src="https://img.shields.io/github/issues/dufacoga/portfolio"/></a>
@@ -10,7 +10,7 @@
 </p>
 
 
-A responsive and elegant developer portfolio built entirely with **Blazor WebAssembly** and **pure CSS Grid**.  
+A responsive and elegant personal portfolio built entirely with **Blazor WebAssembly** and **pure CSS Grid**.  
 This project serves as a modern personal landing page to showcase GitHub projects, skills, certifications, and experience, with support for dark/light themes and full responsiveness across devices.
 
 ---
