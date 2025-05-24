@@ -143,7 +143,10 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
-## 👤 Design inspired by 🌐 [Ariful Alam](https://github.com/arifszn)
+## 👤 Design inspired by 
+
+**Ariful Alam**  
+🌐 [GitHub](https://github.com/arifszn)
 
 ## 👤 Author
 
