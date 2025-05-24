@@ -6,7 +6,7 @@
   <a href="https://github.com/dufacoga/portfolio/network/members"><img src="https://img.shields.io/github/forks/dufacoga/portfolio"/></a>
   <a href="https://github.com/dufacoga/portfolio/commits/master"><img src="https://img.shields.io/github/last-commit/dufacoga/portfolio"/></a>
   <a href="https://github.com/dufacoga/portfolio/blob/master/contributing.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
-  <a href="https://github.com/dufacoga/portfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dufacoga/dufacoga"/></a>
+  <a href="https://github.com/dufacoga/portfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dufacoga/portfolio"/></a>
 </p>
 
 
@@ -19,10 +19,13 @@ This project serves as a modern personal landing page to showcase GitHub project
 
 <p align="center">
   <a href="https://dufacoga.github.io">
-    <img src="https://github.com/user-attachments/assets/b43dda5a-7a81-4a64-b7a7-44a482f858ff" alt="Live Demo Preview" width="70%" />
+    <img src="https://github.com/user-attachments/assets/3a7d74be-678b-483e-835a-3766bc0bd653" alt="Live Demo Preview" width="90%" />
   </a>
-  <br/>
-  <a href="https://dufacoga.github.io">View Demo</a>
+</p>
+<p align="center">
+  <a href="https://dufacoga.github.io/Portfolio">View Demo</a>
+  ·
+  <a href="https://github.com/dufacoga/Portfolio/issues">Report Bug</a>
 </p>
 
 ---
@@ -37,18 +40,18 @@ This project serves as a modern personal landing page to showcase GitHub project
 - GitHub Projects
 - Experience and Publications
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/b43dda5a-7a81-4a64-b7a7-44a482f858ff" alt="Portfolio Overview" width="80%" />
-</p>
-
 ---
 
 ## 📱 Responsive & Theme Switching
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/05675604-e5ba-480e-982b-48f493536efa" alt="Responsive Demo" width="45%" />
-  &nbsp;
-  <img src="https://github.com/user-attachments/assets/7ac36602-171f-4d8f-b98c-b5ca5c68c182" alt="Theme Switching Demo" width="45%" />
+**The responsive behavior (mobile ↔️ desktop)**
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/a25078f1-7467-4fde-b080-9bb6edffdffc" alt="Responsive Demo" width="75%" />
+</p>
+
+**Switching between themes (dark, light, default)**
+<p align="start">
+  <img src="https://github.com/user-attachments/assets/4a66446d-2b9c-4de3-b9f5-ef0d3ab3a6db" alt="Theme Switching Demo" width="75%" />
 </p>
 
 ---
@@ -146,7 +149,7 @@ This project is open source under the [MIT License](LICENSE).
 ## 👤 Design inspired by 
 
 **Ariful Alam**  
-🌐 [GitHub](https://github.com/arifszn)
+:octocat: [GitHub](https://github.com/arifszn)
 
 ## 👤 Author
 
