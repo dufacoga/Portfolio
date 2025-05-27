@@ -19,7 +19,7 @@ This project serves as a modern personal landing page to showcase GitHub project
 
 <p align="center">
   <a href="https://dufacoga.github.io">
-    <img src="https://github.com/user-attachments/assets/3a7d74be-678b-483e-835a-3766bc0bd653" alt="Live Demo Preview" width="90%" />
+    <img src="https://github.com/user-attachments/assets/3a7d74be-678b-483e-835a-3766bc0bd653" alt="Live Demo Preview" width="95%" />
   </a>
 </p>
 <p align="center">
@@ -46,12 +46,12 @@ This project serves as a modern personal landing page to showcase GitHub project
 
 **The responsive behavior (mobile ↔️ desktop)**
 <p align="start">
-  <img src="https://github.com/user-attachments/assets/a25078f1-7467-4fde-b080-9bb6edffdffc" alt="Responsive Demo" width="75%" />
+  <img src="https://github.com/user-attachments/assets/a25078f1-7467-4fde-b080-9bb6edffdffc" alt="Responsive Demo" width="85%" />
 </p>
 
 **Switching between themes (dark, light, default)**
 <p align="start">
-  <img src="https://github.com/user-attachments/assets/4a66446d-2b9c-4de3-b9f5-ef0d3ab3a6db" alt="Theme Switching Demo" width="75%" />
+  <img src="https://github.com/user-attachments/assets/4a66446d-2b9c-4de3-b9f5-ef0d3ab3a6db" alt="Theme Switching Demo" width="85%" />
 </p>
 
 ---
