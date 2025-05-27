@@ -457,6 +457,10 @@ a.card {
         color: var(--bg-color);
     }
 
+    .containerinfogeneral h3 {
+        font-size: 0.85rem;
+    }
+
 /* #region 5th Card 1st Column - Experiences */
 
     .experience {
