@@ -159,6 +159,11 @@ a.card {
     color: var(--text-color);
 }
 
+.card.clone {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
 /* #region 1st Card 1st Column - Header */
 
     .headercard {
@@ -569,11 +574,6 @@ a.card {
             background-color: var(--card-bg);
             transition: box-shadow 0.3s ease;
         }
-
-    .githubproject.clone {
-        opacity: 0.3;
-        pointer-events: none;
-    }
 
     .infogithubprojectcard {
         display: grid;
