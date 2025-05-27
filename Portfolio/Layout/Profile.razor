@@ -11,7 +11,7 @@
 
 <!-- Resume download button -->
 <div class="profile-item profile-actions">
-	<button>Download Resume</button>
+	<a class="download-button" href="@ResumeUrl" download target="_blank">Download Resume</a>
 </div>
 
 @code {
@@ -23,4 +23,7 @@
 
 	// Image URL for the profile photo
 	[Parameter] public string ImageUrl { get; set; }
+
+	// Resume URL for the download button
+	[Parameter] public string ResumeUrl { get; set; }
 }

@@ -1,6 +1,6 @@
-﻿<div class="card @GroupClass">
+﻿<a class="card @GroupClass" href="@Urlcard" target="_blank">
     @ChildContent
-</div>
+</a>
 
 @code {
     // Allows passing custom CSS class names to style the card
@@ -8,4 +8,6 @@
 
     // Enables any nested content (text, components, etc.) to be rendered inside the card
     [Parameter] public RenderFragment ChildContent { get; set; }
+
+    [Parameter] public string Urlcard { get; set; }
 }

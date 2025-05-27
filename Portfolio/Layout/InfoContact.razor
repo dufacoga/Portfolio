@@ -7,7 +7,7 @@
 </div>
 
 <!-- The actual contact value (e.g., username, email) -->
-<span>@Subtitle</span>
+<a href="@SubtitleUrl" target="@SubtitleUrltarget"><span>@Subtitle</span></a>
 
 @code {
 	// Title or label of the contact item
@@ -18,4 +18,10 @@
 
 	// FontAwesome icon class (e.g., "fab fa-github")
 	[Parameter] public string GroupClass { get; set; }
+
+	// Url of the contact item
+	[Parameter] public string SubtitleUrl { get; set; }
+
+	// Url of the contact item
+	[Parameter] public string SubtitleUrltarget { get; set; }
 }

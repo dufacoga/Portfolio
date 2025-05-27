@@ -154,6 +154,11 @@
     transition: box-shadow 0.3s ease;
 }
 
+a.card {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 /* #region 1st Card 1st Column - Header */
 
     .headercard {
@@ -316,10 +321,10 @@
         }
 
         /* Button styling for actions like downloading resume */
-        .profile-actions button {
+        .profile-actions .download-button {
             background-color: transparent;
             color: var(--text-color);
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--text-color);
             padding: 0.5rem 1rem;
             border-radius: var(--border-radius);
             cursor: pointer;
@@ -328,8 +333,16 @@
         }
 
             /* Hover effect for the action button */
-            .profile-actions button:hover {
-                opacity: 0.9;
+            .profile-actions .download-button:hover {
+                background-color: var(--text-color);
+                color: var(--card-bg);
+                border: 1px solid var(--text-color);
+                opacity: 0.5;
+                padding: 0.5rem 1rem;
+                border-radius: var(--border-radius);
+                cursor: pointer;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
             }
 
     /* #endregion */
@@ -372,6 +385,15 @@
 
         .contact > span {
             text-align: end;
+        }
+
+        .contact a {
+            text-align: end;
+            text-decoration: none;
+            color: var(--text-color);
+            background: none;
+            border: none;
+            font: inherit;
         }
 
     .infocontacttitle {
@@ -536,6 +558,17 @@
         grid-template-rows: repeat(4,auto);
         align-content: center;
     }
+
+        .githubprojects a {
+            text-decoration: none;
+            color: var(--text-color);
+            display: grid;
+            width: 100%;
+            justify-self: stretch;
+            align-self: stretch;
+            background-color: var(--card-bg);
+            transition: box-shadow 0.3s ease;
+        }
 
     .githubproject.clone {
         opacity: 0.3;

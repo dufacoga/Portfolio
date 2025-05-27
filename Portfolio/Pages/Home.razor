@@ -12,28 +12,28 @@
 			</div>
 			<div class="row">
 				<Card GroupClass="profilecard">
-					<Profile Title="John Doe" Subtitle="Sr. Software Engineer | Distributed Systems Specialist | Node.js, Microservices Architecture" ImageUrl="images/profile.jpg" />
+					<Profile Title="John Doe" Subtitle="Sr. Software Engineer | Distributed Systems Specialist | Node.js, Microservices Architecture" ImageUrl="images/profile.jpg" ResumeUrl="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" />
 				</Card>
 			</div>
 			<div class="row">
 				<Card GroupClass="contactcard">
 					<Contact>
-						<InfoContact Title="Based in:" Subtitle="USA" GroupClass="fas fa-map-marker-alt" />
+						<InfoContact Title="Based in:" Subtitle="USA" GroupClass="fas fa-map-marker-alt" SubtitleUrl="" SubtitleUrltarget="_self" />
 					</Contact>
 					<Contact>
-						<InfoContact Title="GitHub:" Subtitle="johndoe" GroupClass="fab fa-github" />
+						<InfoContact Title="GitHub:" Subtitle="johndoe" GroupClass="fab fa-github" SubtitleUrl="" SubtitleUrltarget="_blank" />
 					</Contact>
 					<Contact>
-						<InfoContact Title="LinkedIn:" Subtitle="johndoe" GroupClass="fab fa-linkedin" />
+						<InfoContact Title="LinkedIn:" Subtitle="johndoe" GroupClass="fab fa-linkedin" SubtitleUrl="" SubtitleUrltarget="_blank" />
 					</Contact>
 					<Contact>
-						<InfoContact Title="Website:" Subtitle="johndoe.com" GroupClass="fas fa-globe" />
+						<InfoContact Title="Website:" Subtitle="johndoe.com" GroupClass="fas fa-globe" SubtitleUrl="" SubtitleUrltarget="_blank" />
 					</Contact>
 					<Contact>
-						<InfoContact Title="Email:" Subtitle="johndoe@johndoe.com" GroupClass="fas fa-envelope" />
+						<InfoContact Title="Email:" Subtitle="johndoe@johndoe.com" GroupClass="fas fa-envelope" SubtitleUrl="" SubtitleUrltarget="_self" />
 					</Contact>
 					<Contact>
-						<InfoContact Title="Cellphone:" Subtitle="+1 901 354 1894" GroupClass="fas fa-mobile-alt" />
+						<InfoContact Title="Cellphone:" Subtitle="+1 901 354 1894" GroupClass="fas fa-mobile-alt" SubtitleUrl="" SubtitleUrltarget="_self" />
 					</Contact>
 				</Card>
 			</div>
@@ -96,7 +96,7 @@
 					{
 						@foreach (var repo in repos.Take(8))
 						{
-							<Card GroupClass="githubproject">
+							<Card GroupClass="githubproject" Urlcard="@repo.Html_Url">
 								<InfoGithubProject Name="@repo.Name"
 												   Description="@repo.Description"
 												   Stars="@repo.Stargazers_Count"
@@ -120,13 +120,13 @@
 			</div>
 			<div class="row">
 				<GroupCard Title="Publications" Link="" LinkHref="" GroupClass="publications">
-					<Card GroupClass="publication">
+					<Card GroupClass="publication" Urlcard="">
 						<InfoPublication Title="Publication Title"
 										 Origin="Journal Name"
 										 Author="Author: John Doe, Jane Smith"
 										 Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
 					</Card>
-					<Card GroupClass="publication">
+					<Card GroupClass="publication" Urlcard="">
 						<InfoPublication Title="Publication Title"
 										 Origin="Journal Name"
 										 Author="Author: John Doe, Jane Smith"
@@ -136,12 +136,12 @@
 			</div>
 			<div class="row">
 				<GroupCard Title="My Projects" Link="" LinkHref="" GroupClass="myprojects">
-					<Card GroupClass="project">
+					<Card GroupClass="project" Urlcard="">
 						<InfoMyProject Title="Project Name"
 									   ImageUrl="images/illustration-gallery-icon.png"
 									   Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut." />
 					</Card>
-					<Card GroupClass="project">
+					<Card GroupClass="project" Urlcard="">
 						<InfoMyProject Title="Project Name"
 									   ImageUrl="images/illustration-gallery-icon.png"
 									   Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut." />
@@ -150,7 +150,7 @@
 			</div>
 			<div class="row">
 				<GroupCard Title="My Articles" Link="" LinkHref="" GroupClass="myarticles">
-					<Card GroupClass="article">
+					<Card GroupClass="article" Urlcard="">
 						<InfoMyArticle Title="Prevent API Overload: A Comprehensive Guide to Rate Limiting with Bottleneck"
 									   Time="about 1 year ago"
 									   ImageUrl="images/amazonawsarticles.png"
@@ -161,7 +161,7 @@
 							<InfoHashtag Text="#tutorial" />
 						</InfoMyArticle>
 					</Card>
-					<Card GroupClass="article">
+					<Card GroupClass="article" Urlcard="">
 						<InfoMyArticle Title="Prevent API Overload: A Comprehensive Guide to Rate Limiting with Bottleneck"
 									   Time="about 1 year ago"
 									   ImageUrl="images/amazonawsarticles.png"
@@ -177,7 +177,7 @@
 		</div>
 	</div>
 	<div class="footer">
-		<Card GroupClass="footercard">
+		<Card GroupClass="footercard" Urlcard="">
 			<span>Design inspired by <i class="fab fa-github"></i>Arifszn.</span>
 		</Card>
 	</div>
