@@ -5,7 +5,7 @@
   <a href="https://github.com/dufacoga/portfolio/stargazers"><img src="https://img.shields.io/github/stars/dufacoga/portfolio"/></a>
   <a href="https://github.com/dufacoga/portfolio/network/members"><img src="https://img.shields.io/github/forks/dufacoga/portfolio"/></a>
   <a href="https://github.com/dufacoga/portfolio/commits/master"><img src="https://img.shields.io/github/last-commit/dufacoga/portfolio"/></a>
-  <a href="https://github.com/dufacoga/portfolio/blob/master/contributing.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
+  <a href="https://github.com/dufacoga/portfolio/blob/master/CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/></a>
   <a href="https://github.com/dufacoga/portfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dufacoga/portfolio"/></a>
 </p>
 
