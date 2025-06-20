@@ -189,7 +189,7 @@
 	protected override async Task OnInitializedAsync()
 	{
 		var username = "dufacoga";
-		var url = $"https://api.github.com/users/{username}/repos";
+		var url = $"https://api.github.com/users/{username}/repos?sort=updated&direction=desc";
 
 		var request = new HttpRequestMessage(HttpMethod.Get, url);
 		request.Headers.UserAgent.ParseAdd("PortfolioApp");
