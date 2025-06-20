@@ -149,7 +149,7 @@ This project is open source under the [MIT License](LICENSE).
 ## 👤 Design inspired by 
 
 **Ariful Alam**  
-:octocat: [GitHub](https://github.com/arifszn)
+:octocat:  [GitHub](https://github.com/arifszn)
 
 ## 👤 Author
 
