@@ -151,7 +151,7 @@ This project is open source under the [MIT License](LICENSE).
 **Ariful Alam**  
 :octocat:  [GitHub](https://github.com/arifszn)
 
-## 👤 Author
+## 👤 Author 
 
 **Douglas Cortes**  
 💼 [LinkedIn](https://www.linkedin.com/in/dufacoga)  
